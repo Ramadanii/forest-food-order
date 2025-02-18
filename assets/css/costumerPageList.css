@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins';
+    margin: 0px;
+    padding: 0px;
+    background-color: #F9F9F9;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.paragraph {
+    color: #969BA0;
+
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    background: #F4F5F9;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.imgtwo {
+    margin-left: 40px;
+}
+
+
+.filter-button img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    color: #3E4954;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #eee;
+}
+
+tbody td {
+    padding: 15px;
+    margin: 10px;
+}
+
+th img {
+    width: 8px;
+    margin-left: 5px;
+}
+
+.more-options img {
+    width: 16px;
+    text-align: center;
+    position: relative;
+}
+
+
+.lastOrder {
+    background-color: #3E49540F;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.blueColone {
+    background-color: #F5F7FF;
+}
+
+
+.actions {
+    position: relative;
+    text-align: right;
+}
+
+
+
+.pop-up {
+    position: absolute;
+    text-align: left;
+    right: -30px;
+    top: -85px;
+    left: 5px;
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 5px 10px;
+    display: block;
+    display: none;
+}
+
+.viewDetail {
+    color: #2F4CDD;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination .buttons {
+    display: flex;
+
+}
+
+.previousNext {
+    background-color: #2F4CDD;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.threebuttons {
+    background-color: #E3E4EB;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.threebuttons .numbers {
+    border: none;
+    outline: none;
+    color: #2F4CDD;
+    background-color: transparent;
+}
+
+.numberthree {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 8px 10px 8px 10px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+}
+
+@media (max-width: 460px) {
+    body {
+        font-size: 14px;
+
+    }
+
+    thead {
+        display: none;
+
+    }
+
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background: #fff;
+    }
+
+    td {
+        display: flex;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+}
