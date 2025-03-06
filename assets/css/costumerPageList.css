@@ -185,3 +185,40 @@ footer {
     }
 
 }
+
+@media (max-width: 460px) {
+    .pagination {
+        flex-direction: column;
+        /* Ky do të bëjë që butonat të rreshtohen vertikalisht */
+        align-items: center;
+    }
+
+    .pagination .buttons {
+        display: flex;
+        flex-direction: column;
+        /* Rreshton butonat vertikalisht për ekrane të vegjël */
+    }
+
+    .previousNext {
+        width: 100%;
+        /* Bëni butonat të mbushin hapësirën */
+        margin-bottom: 10px;
+    }
+
+    .threebuttons {
+        width: 100%;
+        /* Përshtatni butonat e numrave për t'u përshtatur */
+        display: flex;
+        justify-content: space-around;
+        /* Rreshton numrat në mënyrë të barabartë */
+        margin-top: 10px;
+    }
+
+    .numbers,
+    .numberthree {
+        width: 100%;
+        /* Siguroni që numrat të mbushin hapësirën e disponueshme */
+        padding: 10px;
+        text-align: center;
+    }
+}

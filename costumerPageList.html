@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/costumerPageList.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Aside bar  -->
+
+    <aside>
+        <article class="asideTopIcons">
+            <article class="asideLogoAndName">
+                <figure class="asideTopLogo">
+                    <img src="/assets/img/CustomerPageList/logo.png" alt="Logo">
+                </figure>
+                <article class="asideTopName">
+                    <h1>Davur</h1>
+                    <img width="30px" src="/assets/img/CustomerPageList/dashboard.png" alt="dashboardOne">
+                </article>
+            </article>
+
+            <article class="asideTopIcon">
+                <span class="material-symbols-outlined cursorPointer menuIcon">
+
+                </span>
+                <article class="closeIcon">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </article>
+            </article>
+        </article>
+
+        <article class="asideLinks dFlex flexDirectionColumn gap10px">
+            <article class="asideLink padding20px active">
+                <img src="/assets/img/CustomerPageList/ic_dashboard.png" alt="Dashboard" />
+                <h1>Dashboard</h1>
+
+            </article>
+
+            <article class="asideLink padding20px asideLinkOrders">
+                <figure>
+                    <img src="/assets/img/CustomerPageList/ic_order.png" alt="Order " />
+                </figure>
+                <h1 class="fweight500">Orders <span class="ordersNumber">25</span></h1>
+            </article>
+
+            <article class="asideLink asideMenus padding20px dFlex justifyContentSpaceBetween">
+                <article class="asideMenusTextAndIcon">
+                    <img src="/assets/img/CustomerPageList/menus.png" alt="Menu" />
+                    <h1>Menus</h1>
+                </article>
+                <img src="assets/img/CustomerPageList/ic_right_arrow.png" alt="Right Arrow" />
+
+
+            </article>
+
+            <article class="asideLink  dFlex flexDirectionColumn padding20px">
+                <article class="dFlex justifyContentSpaceBetween">
+                    <article class="asideCustomersTextAndIcon">
+                        <img src="/assets/img/CustomerPageList/ic_customer.png" alt="Customer" />
+                        <h1 class="costumerBlue">Customers</h1>
+                    </article>
+                    <img src="/assets/img/CustomerPageList/ic_bottom_arrow.png" class="Bottom Arrow" />
+                </article>
+                <article class="asideCustomersMoreLinks dFlex flexDirectionColumn">
+                    <a class='mainTextColor' href="#">Add New</a>
+                    <a class="mainTextColor" href="#">Members</a>
+                    <a class="mainTextColor" href="#">General Customers</a>
+                </article>
+            </article>
+
+
+
+
+            <article class="asideLink  padding20px dFlex justifyContentSpaceBetween">
+                <article class="asideAnalyticsTextAndIcon">
+                    <img src="/assets/img/CustomerPageList/ic_analytics.png" class="Analytics Logo" />
+                    <h1>Analytics</h1>
+                </article>
+                <img src="/assets/img/CustomerPageList/ic_right_arrow.png" class="Right Arrow Logo" />
+            </article>
+        </article>
+
+        <article class="asideMenu padding20px dFlex flexDirectionColumn gap20px">
+            <article class="asideAddMenusInfo ">
+                <h4>Organize your menus through button below</h4>
+                <button class="cursorPointer">Add Menus</button>
+                <article class="asideAddMenusIcon">
+                    <img src="/assets/img/CustomerPageList/addMenusIcon.png" class="Add Menu Icon" />
+                </article>
+            </article>
+            <article class="asideAllRights dFlex flexDirectionColumn gap10px">
+                <h4 class="primaryColor">Davur Restaurant Admin Dashboard</h4>
+                <h6 class="primaryColor">@ 2020 All Rights Reserved</h6>
+
+                <p class="primaryColor">Made with love by Peterdraw</p>
+            </article>
+        </article>
+
+
+    </aside>
+
+    <div class="mainDiv">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <form>
+                <input type="text" placeholder="Search here" name="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </form>
+
+
+            <article class="navLinks dFlex gap10px">
+                <a href="#">About</a>
+                <a class="activeNavLink" href="#">Tools</a>
+                <a href="#">Help</a>
+            </article>
+
+            <section class="dFlex alignItemsCenter gap30px">
+                <article class="notificationIcon">
+                    <figure>
+                        <img src="/assets/img/CustomerPageList/ic_notification.png" alt="Notification" />
+                        <figcaption class="numberOfNotifications">
+                            <p>12</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <figure class="messageIcon">
+                    <img src="./assets/img/CustomerPageList/ic_chat.png" alt="Chat" />
+                    <figcaption class="numberOfMessages">
+                        <p>2</p>
+                    </figcaption>
+                </figure>
+                <figure class="giftIcon">
+                    <img src="/assets/img/CustomerPageList/ic_gift.png" alt="Gift" />
+                    <figcaption class="numberOfGiftIcon">
+                        <p>2</p>
+                    </figcaption>
+                </figure>
+                <figure class="settingsIcon">
+                    <img src="/assets/img/CustomerPageList/ic_setting.png" alt="Settings" />
+                    <figcaption class="statusOfSettings">
+                        <p>!</p>
+                    </figcaption>
+                </figure>
+                <article class="profileIcon">
+                    <p class="colorWhite">Hello, Samuel</p>
+                    <figure class="profileIconImage">
+                        <img src="/assets/img/CustomerPageList/profileImage.png" alt="Profile">
+                    </figure>
+                </article>
+                <figure class="profileIconOnly">
+                    <img src="/assets/img/CustomerPageList/profileImage.png" alt="Profile">
+                </figure>
+            </section>
+
+        </nav>
+
+        <header class="header-container">
+            <div>
+                <h2>General Customers</h2>
+                <p class="paragraph">Here is your general customers list data</p>
+            </div>
+            <div>
+                <div class="filter-button">
+                    <img src="/assets/img/CustomerPageList/filter 1.png" alt="Filter Icon">
+                    <p>Filter</p>
+                    <img class="imgtwo" src="/assets/img/CustomerPageList/Vector.png" alt="Vector Icon">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID <img src="/assets/img/CustomerPageList/ic_sort.png" alt="Sort"></th>
+                        <th>Join Date <img src="/assets/img/CustomerPageList/ic_sort2.png" alt="Sort"></th>
+                        <th>Customer Name <img src="/assets/img/CustomerPageList/ic_sort2.png" alt="Sort"></th>
+                        <th>Location <img src="/assets/img/CustomerPageList/ic_sort2.png" alt="Sort"></th>
+                        <th>Total Spent <img src="/assets/img/CustomerPageList/ic_sort2.png" alt="Sort"></th>
+                        <th>Last Order <img src="/assets/img/CustomerPageList/ic_sort2.png" alt="Sort"></th>
+                    </tr>
+
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#C-004560</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Veronica</td>
+                        <td>21 King Street London</td>
+                        <td>$74.92</td>
+                        <td class="lastOrder">$21.55</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-004562</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Olivia Shine</td>
+                        <td>35 Station Road London</td>
+                        <td>$82.46</td>
+                        <td class="lastOrder">$42.85</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-00456</td>
+                        <td>26 March 2020, 01:42 PM</td>
+                        <td>David Horison</td>
+                        <td>981 St. John’s Road London</td>
+                        <td>$24.55</td>
+                        <td class="lastOrder">$14.89</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-004563</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Roberto Carlo</td>
+                        <td>544 Manor Road London</td>
+                        <td>$34.41</td>
+                        <td class="lastOrder">$8.13</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-004561</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Samantha Bake</td>
+                        <td>79 The Drive London</td>
+                        <td>$22.18</td>
+                        <td class="lastOrder">$11.41</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-00451</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>James Witcwicky</td>
+                        <td>Corner Street 5th London</td>
+                        <td>$164.52</td>
+                        <td class="lastOrder">$67.27</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-004564</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Franky Sihotang</td>
+                        <td>6 The Avenue London</td>
+                        <td>$45.86</td>
+                        <td class="lastOrder">$17.31</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C-00459</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Jessica Wong</td>
+                        <td>11 Church Road London</td>
+                        <td>$24.17</td>
+                        <td class="lastOrder">$11.41</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                    <tr class="blueColone">
+                        <td>#C-00458</td>
+                        <td>26 March 2020, 12:42 AM</td>
+                        <td>Rendy Greenlee</td>
+                        <td>32 The Green London</td>
+                        <td>$44.99</td>
+                        <td class="lastOrder">$24.17</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                        <td class="actions">
+                            <div class="pop-up">
+                                <p class="viewDetail">View Detail</p>
+                                <p>Edit</p>
+                                <p>Delete</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>#C-00457</td>
+                        <td>26 March 2020, 02:12 AM</td>
+                        <td>Emilia Johanson</td>
+                        <td>67 St. John's Road London</td>
+                        <td>$251.16</td>
+                        <td class="lastOrder">$91.68</td>
+                        <td class="more-options">
+                            <img src="/assets/img/CustomerPageList/more-vertical (1) 1.png" alt="More Options">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </main>
+        <footer class="pagination">
+            <div>
+                <p>Showing 10 from 46 data</p>
+            </div>
+            <div class="buttons">
+                <button class="previousNext">&laquo; Previous</button>
+                <div class="threebuttons">
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numberthree">3</button>
+                    <button class="numbers">4</button>
+                </div>
+                <button class="previousNext">Next &raquo;</button>
+            </div>
+
+        </footer>
+
+
+</body>
+
+</html>
