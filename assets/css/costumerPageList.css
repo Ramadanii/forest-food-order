@@ -5,11 +5,45 @@ body {
     background-color: #F9F9F9;
 }
 
+
+/*Global class*/
+
+.dFlex {
+    display: flex;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+
+.colorWhite {
+    color: white;
+}
+
+
+.padding {
+    padding: 20px;
+}
+
+.borderRadius {
+    border-radius: 12px;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+
+/*header*/
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 20px;
-    align-items: center;
 }
 
 .paragraph {
@@ -18,11 +52,8 @@ body {
 }
 
 .filter-button {
-    display: flex;
-    align-items: center;
     background: #F4F5F9;
     padding: 8px 12px;
-    border-radius: 12px;
 }
 
 .imgtwo {
@@ -35,21 +66,22 @@ body {
     margin-right: 8px;
 }
 
-main {
-    padding: 20px;
-}
+/*main*/
+
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: #ffffff;
     color: #3E4954;
+
 }
 
 thead th {
-    text-align: left;
     padding: 12px;
     border-bottom: 2px solid #eee;
+    text-align: center;
+
 }
 
 tbody td {
@@ -60,6 +92,7 @@ tbody td {
 th img {
     width: 8px;
     margin-left: 5px;
+    display: inline-block;
 }
 
 .more-options img {
@@ -72,7 +105,6 @@ th img {
 .lastOrder {
     background-color: #3E49540F;
     padding: 5px 10px;
-    border-radius: 10px;
     display: inline-block;
 }
 
@@ -86,17 +118,13 @@ th img {
     text-align: right;
 }
 
-
-
 .pop-up {
     position: absolute;
     text-align: left;
     right: -30px;
     top: -85px;
     left: 5px;
-    background: #FFFFFF;
     border: 1px solid #ddd;
-    border-radius: 12px;
     padding: 5px 10px;
     display: block;
     display: none;
@@ -106,31 +134,27 @@ th img {
     color: #2F4CDD;
 }
 
+/*footer*/
+
 .pagination {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
 
-.pagination .buttons {
-    display: flex;
-
-}
-
-.previousNext {
-    background-color: #2F4CDD;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin: 0 5px;
-    border-radius: 6px;
-    align-items: center;
 }
 
 .threebuttons {
     background-color: #E3E4EB;
     border-radius: 6px;
     padding: 5px;
+}
+
+.previousNext {
+    background-color: #2F4CDD;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 6px;
+
 }
 
 .threebuttons .numbers {
@@ -150,16 +174,8 @@ th img {
     font-weight: bold;
 }
 
-footer {
-    padding: 20px;
-}
 
-@media (max-width: 460px) {
-    body {
-        font-size: 14px;
-
-    }
-
+@media (max-width: 768px) {
     thead {
         display: none;
 
@@ -174,50 +190,35 @@ footer {
         display: block;
         margin-bottom: 10px;
         border: 1px solid #ddd;
-        padding: 10px;
-        background: #fff;
     }
 
     td {
         display: flex;
         padding: 8px;
-        border-bottom: 1px solid #ddd;
+        justify-content: space-between;
     }
-
 }
 
 @media (max-width: 460px) {
     .pagination {
         flex-direction: column;
-        /* Ky do të bëjë që butonat të rreshtohen vertikalisht */
         align-items: center;
-    }
-
-    .pagination .buttons {
-        display: flex;
-        flex-direction: column;
-        /* Rreshton butonat vertikalisht për ekrane të vegjël */
     }
 
     .previousNext {
         width: 100%;
-        /* Bëni butonat të mbushin hapësirën */
-        margin-bottom: 10px;
     }
 
     .threebuttons {
         width: 100%;
-        /* Përshtatni butonat e numrave për t'u përshtatur */
         display: flex;
         justify-content: space-around;
-        /* Rreshton numrat në mënyrë të barabartë */
         margin-top: 10px;
     }
 
     .numbers,
     .numberthree {
         width: 100%;
-        /* Siguroni që numrat të mbushin hapësirën e disponueshme */
         padding: 10px;
         text-align: center;
     }
