@@ -38,6 +38,9 @@ body {
     flex-direction: column;
 }
 
+.textAlignCenter {
+    text-align: center;
+}
 
 /*header*/
 
